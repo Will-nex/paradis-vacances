@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Paradis Vacances – Italie</title>
+  <style>
+    html, body {
+      margin: 0; padding: 0; height: 100%;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* Vidéo en fond */
+    .video-background {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -2;
+      opacity: 0.6; /* Ajuste la visibilité ici */
+    }
+
+    /* Image de fond (complémentaire) */
+    body {
+      background: url("images/fond-italie.jpg") no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+      z-index: 0;
+    }
+
+    /* Couche sombre semi-transparente sur le texte */
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      min-height: 100vh;
+      padding-bottom: 30px;
+      position: relative;
+      z-index: 1;
+    }
+
+    header {
+      background: url("images/bandeau-header.jpg") no-repeat center center;
+      background-size: cover;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    header p {
+      font-size: 1.5em;
+      margin: 10px 0;
+      font-weight: bold;
+      color: #fdf3c2;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    }
+
+    nav {
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fdfdfd;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+    }
+
+    main h2 {
+      font-size: 2em;
+      color: #ffeaa7;
+      text-align: center;
+    }
+
+    main p {
+      font-size: 1.1em;
+      line-height: 1.8em;
+      color: #ffffff;
+    }
+
+    footer {
+      background: url("images/bandeau-footer.jpg") no-repeat center center;
+      background-size: cover;
+      text-align: center;
+      padding: 20px;
+      color: white;
+      font-weight: bold;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Vidéo de fond -->
+  <video autoplay loop muted playsinline class="video-background">
+    <source src="videos/vagues.mp4" type="video/mp4" />
+    Votre navigateur ne supporte pas la vidéo HTML5.
+  </video>
+
+  <div class="overlay">
+
+    <header>
+      <h1>Paradis Vacances – Italie</h1>
+      <p><em>Ciao les soucis, bonjour l’Italie !</em></p>
+      <p><strong>Amore, Pasta, Vacanza !</strong></p>
+    </header>
+<nav>
+      <a href="index.html">Présentation</a>
+      <a href="activites.html">Activités</a>
+      <a href="reservations.html">Réservations</a>
+      <a href="infos.html">Informations</a>
+    </nav>
+
+    <main>
+      <h2>À propos de Paradis Vacances</h2>
+      <p>
+        Niché entre les collines verdoyantes de la Toscane et les rives éclatantes du lac de Côme, Paradis Vacances est bien plus qu'une destination : c’est une invitation à ralentir, respirer et s’émerveiller. Ici, le charme de l’Italie opère à chaque instant – que ce soit dans le parfum des oliviers, le goût d’un espresso sur la terrasse ou le chant lointain d’un accordéon en fin de journée.
+      </p>
+      <p>
+        Notre domaine vous propose un séjour authentique, entre tradition et confort moderne. Hébergez-vous dans des villas en pierre, des chambres d'hôtes familiales ou des gîtes avec piscine et vue panoramique. Chaque logement est décoré avec soin, inspiré par les couleurs et l’élégance naturelle de l’Italie.
+      </p>
+      <p>
+        Sur place, vous aurez accès à une variété d’activités : des balades en péniche au coucher du soleil, des ateliers de cuisine italienne, des dégustations de vins dans les domaines locaux, ou encore des excursions à vélo dans les vignobles vallonnés. Nos guides passionnés vous emmèneront aussi découvrir les petits villages perchés, souvent oubliés des touristes, mais riches d’histoire et de beauté.
+      </p>
+      <p>
+        Que vous cherchiez le repos, l’inspiration, l’aventure ou simplement un coin de paradis pour vous reconnecter à l’essentiel – vous êtes au bon endroit. Bienvenue chez vous, en Italie.
+      </p>
+    </main>
+
+    <footer>
+      &copy; 2025 Paradis Vacances – Italie
+    </footer>
+
+  </div>
+</body>
+</html>

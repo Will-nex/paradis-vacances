@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Paradis Vacances – Informations</title>
+  <style>
+    html, body {
+      margin: 0; padding: 0; height: 100%;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* Vidéo de fond */
+    .video-background {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -2;
+      opacity: 0.6;
+    }
+
+    /* Couche semi-transparente sur le texte */
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      min-height: 100vh;
+      padding-bottom: 30px;
+      position: relative;
+      z-index: 1;
+      text-align: center; /* Centre tout le texte */
+    }
+
+    nav {
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fdfdfd;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+    }
+
+    main h2 {
+      font-size: 2em;
+      color: #ffeaa7;
+      margin-bottom: 20px;
+    }
+
+    main p {
+      font-size: 1.1em;
+      line-height: 1.8em;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background: url("images/bandeau-footer.jpg") no-repeat center center;
+      background-size: cover;
+      text-align: center;
+      padding: 20px;
+      color: white;
+      font-weight: bold;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Vidéo de fond -->
+  <video autoplay loop muted playsinline class="video-background">
+    <source src="videos/vagues.mp4" type="video/mp4" />
+    Votre navigateur ne supporte pas la vidéo HTML5.
+  </video>
+
+  <div class="overlay">
+
+    <nav>
+      <a href="index.html">Présentation</a>
+      <a href="activites.html">Activités</a>
+      <a href="reservations.html">Réservations</a>
+      <a href="infos.html">Informations</a>
+    </nav>
+
+    <main>
+      <h2>Informations pratiques</h2>
+      <p>
+        <strong>Adresse :</strong><br />
+        Paradis Vacances<br />
+        Via del Sole 23<br />
+        50123 Florence, Italie
+      </p>
+
+      <p>
+        <strong>Téléphone :</strong><br />
+        +39 055 123 4567
+      </p>
+
+      <p>
+        <strong>Email :</strong><br />
+        contact@paradisvacances.it
+      </p>
+
+      <p>
+        <strong>Horaires d’accueil :</strong><br />
+        Tous les jours de 9h00 à 19h00
+      </p>
+
+      <p>
+        <strong>Comment venir :</strong><br />
+        Paradis Vacances se trouve à 20 minutes de l’aéroport de Florence et est accessible en voiture, taxi ou navette. 
+        Des parkings gratuits sont disponibles pour nos clients.
+      </p>
+
+      <p>
+        <strong>Services sur place :</strong><br />
+        Wi-Fi gratuit, piscine, location de vélos, service de navette vers les principaux sites touristiques, petits déjeuners faits maison.
+      </p>
+
+      <p>
+        <strong>Conditions d’annulation :</strong><br />
+        Annulation gratuite jusqu’à 7 jours avant la date d’arrivée. Après ce délai, des frais peuvent s’appliquer.
+      </p>
+    </main>
+
+    <footer>
+      &copy; 2025 Paradis Vacances – Italie
+    </footer>
+
+  </div>
+</body>
+</html>
